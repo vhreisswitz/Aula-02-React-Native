@@ -6,19 +6,16 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Image
-        source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZpLTd5IbEFzhudXV2-hZJUuRQwphS9TZXg&s' }}
+        source={{ uri: 'https://www.rampinelli.com.br/uploads/produto/arroz-branco-1698345336.png?class=full-img&w=406&h=583&fit=contain' }}
         style={styles.image}
       /> 
-      <Text style={styles.title}>Victor Hugo</Text>
+      <Text style={styles.title}>Arroz R$5,99</Text>
       <Text style={styles.bio}>
-        Esta é a minha bio. Aqui eu falo um pouco sobre mim.
+        Compre agora no seu melhor preço!
       </Text>
       <View style={styles.row}>
-        <TouchableOpacity style={styles.customButton1} onPress={() => Alert.alert('Agora você está seguindo')}>
-          <Text style={styles.buttonText}>Seguir</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.customButton2} onPress={() => Alert.alert('Mensagem enviada!')}>
-          <Text style={styles.buttonText}>Mensagem</Text>
+        <TouchableOpacity style={styles.customButton2} onPress={() => Alert.alert('Arroz adicionado ao carrinho!')}>
+          <Text style={styles.buttonText}>Comprar</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -48,7 +45,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     marginBottom: 20,
-    borderRadius: 100,},
+    borderRadius: 10},
   row: {
     flexDirection: 'row',
     gap: 10,
