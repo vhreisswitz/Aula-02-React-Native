@@ -1,15 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 export default function App() {
   const [tarefas, setTarefas] = useState([
-    { nome: 'Arroz', concluida: false },
-    { nome: 'Feijão', concluida: false },
-    { nome: 'Alvejante', concluida: false },
-    { nome: 'Shampoo', concluida: false },
-    { nome: 'Groudon', concluida: false },
+    { nome: 'Levar o irmão na escola', concluida: false },
+    { nome: 'Ir no mercado', concluida: false },
+    { nome: 'Fazer o almoço', concluida: false },
+    { nome: 'Tomar banho', concluida: false },
+    { nome: 'Levar o cachorro pra passear', concluida: false },
   ]);
 
   const alternarStatus = (index) => {
@@ -19,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <FlatList
         data={tarefas}
         keyExtractor={(item, index) => index.toString()}
@@ -33,7 +33,7 @@ export default function App() {
           </View>
         )}
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
