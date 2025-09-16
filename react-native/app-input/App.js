@@ -17,7 +17,7 @@ export default function App() {
         onChangeText={setNome}
         style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 20, width: '80%', paddingHorizontal: 10}}
         />
-        <Text style={styles.texto}>Olá {nome}</Text>
+        <Text style={styles.texto}>Nome digitado: {nome}</Text>
         <Button title='Limpar' style={styles.btn} onPress={limparcampo}/>
     </View>
   );
