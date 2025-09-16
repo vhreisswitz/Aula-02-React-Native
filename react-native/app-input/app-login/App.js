@@ -34,7 +34,7 @@ export default function App() {
     
     if (Object.keys(novosErros).length === 0) {
       Alert.alert("Sucesso!", "Cadastro realizado com sucesso! 🎉");
-      // Limpar os campos após sucesso
+
       setEmail('');
       setSenha('');
       setTocado(false);
